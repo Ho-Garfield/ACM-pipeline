@@ -2,7 +2,7 @@
 
 Our **method** has the following three advantages:
 
-1. **No annotations** required.
+1. **No human annotations required** throughout the entire process, from training to prediction.
 
 2. It has been evaluated on a multi-center dataset with over **1k cases**, achieving Dice scores greater than **80%** for tumor labels.
 
