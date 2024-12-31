@@ -12,7 +12,7 @@ Our **method** has the following three advantages:
 
 
 # ACM-pipeline
-The code will be uploaded after the article is accepted.
+The full code will be uploaded after the article is accepted.
 
 
 
