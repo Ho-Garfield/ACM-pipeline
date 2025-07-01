@@ -57,6 +57,31 @@ As shown below, this completes the environment setup necessary for running the s
 ![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/2.png)
 
 
+## 3. Data Preprocessing
+
+Place the `.nii.gz` files into the `origin_images` folder under the `data` directory of the project. The file names should use the suffix `_0000.nii.gz`.
+
+### Example Directory Structure:
+
+```
+ACM-pipeline/
+├── code/
+├── data/
+│   └── images/
+│       ├── case001_0000.nii.gz
+│       ├── case002_0000.nii.gz
+│       └── case003_0000.nii.gz
+
+```
+
+Then, navigate to the `code` directory, activate the environment, and run the following command to launch the software GUI:
+
+```bash
+python window.py
+```
+
+As shown below, this will bring up the visualization interface of the software.
+![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/3.png)
 
 
 ```
