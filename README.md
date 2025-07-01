@@ -12,6 +12,7 @@ Our **method** has the following three advantages:
 
 [Annotation-free method for breast tumour segmentation in dynamic contrast-enhanced MRI](https://www.sciencedirect.com/science/article/pii/S1746809425006330)
 
+```
 @article{he2025annotation,
   title={Annotation-free method for breast tumour segmentation in dynamic contrast-enhanced MRI},
   author={He, Jiahui and Zhang, Junjie and Huang, Xu and Liu, Yue and Liao, Jiayi and Cui, Yanfen and Liu, Wenbin and Liang, Changhong and Liu, Zaiyi and Wu, Lei and others},
@@ -21,7 +22,7 @@ Our **method** has the following three advantages:
   year={2025},
   publisher={Elsevier}
 }
-
+```
 
 
 
