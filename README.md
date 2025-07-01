@@ -134,6 +134,20 @@ Click the **`Run`** button to start the script. Once completed successfully, a `
 
 The following figure shows sampled slices from 10% to 90% of a representative case:
 ![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/7.png)
+### 5.4 Breast Region Segmentation Model Training
+
+Rename the `breast` directory to `labels`.
+
+Click the **`train.py`** button to open the parameter configuration window, as shown in **Figure 9**. Set the following parameters:
+
+- **`root path`**: The root directory that contains both the `images` and `labels` folders.
+- **`is breast`**: Indicates whether the current model being trained is for breast region segmentation.
+
+After configuring the parameters, click the **`Run`** button to start training.
+
+Upon successful completion, the breast region segmentation model will be saved in the `model` directory, as shown below.
+![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/8.png)
+
 
 ```
 @article{he2025annotation,
