@@ -94,6 +94,21 @@ Then click the **`standardized.py`** button to enter the parameter setting windo
 ![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/4.png)
 
 Click the **`Run`** button to execute the script. The preprocessed images will be saved in the `images` directory.
+## 5. Breast Region Mask Generation
+
+### 5.1 Slice Mask Generation for Partial Samples
+
+Click the **`create_slice_mask.py`** button to open the parameter setting window for this script. Configure the following parameters:
+
+- **`image folder`**: The input directory containing the initialized image data (default: `images`).
+- **`out dir`**: The output path for the generated slice masks (default: `slice_mask`).
+- **`img sub`** and **`mask sub`**: Suffixes for the input sample files and the output slice mask files, respectively.
+- **`num process`**: Number of threads to use (default: 4).
+
+After configuring the parameters, click the **`Run`** button to start the script.
+
+Once the script finishes successfully, a confirmation window will appear (as shown below), and a new directory named `slice_mask` will be created, containing the generated thoracic slice masks for partial samples.
+![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/5.png)
 
 ```
 @article{he2025annotation,
