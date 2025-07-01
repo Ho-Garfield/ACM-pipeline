@@ -10,6 +10,17 @@ Our **method** has the following three advantages:
    
 ![Description of GIF](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/multi.gif)
 
+[Annotation-free method for breast tumour segmentation in dynamic contrast-enhanced MRI](https://www.sciencedirect.com/science/article/pii/S1746809425006330)
+
+@article{he2025annotation,
+  title={Annotation-free method for breast tumour segmentation in dynamic contrast-enhanced MRI},
+  author={He, Jiahui and Zhang, Junjie and Huang, Xu and Liu, Yue and Liao, Jiayi and Cui, Yanfen and Liu, Wenbin and Liang, Changhong and Liu, Zaiyi and Wu, Lei and others},
+  journal={Biomedical Signal Processing and Control},
+  volume={110},
+  pages={108122},
+  year={2025},
+  publisher={Elsevier}
+}
 
 
 
