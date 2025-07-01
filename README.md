@@ -12,6 +12,53 @@ Our **method** has the following three advantages:
 
 [Annotation-free method for breast tumour segmentation in dynamic contrast-enhanced MRI](https://www.sciencedirect.com/science/article/pii/S1746809425006330)
 
+## 1. Miniconda Installation
+
+The software is designed to run on **Ubuntu 22.04.2 LTS**. Before using it, you should install **Miniconda** to manage virtual environments.
+
+First, open a new terminal window and run the following command to download the Miniconda installer shell script:
+
+```bash
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+```
+
+Then, execute the installer script in the same directory:
+
+```bash
+bash Miniconda3-latest-Linux-x86_64.sh
+```
+
+---
+
+## 2. Environment Initialization
+
+After installing Miniconda, navigate to the `code` directory (as shown below) and open a terminal. Run the following command to create a new environment named `test` with Python 3.9:
+
+![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/1.png)
+
+```bash
+conda create -n test python=3.9
+```
+
+Activate the environment with:
+
+```bash
+conda activate test
+```
+
+Finally, install the required dependencies using:
+
+```bash
+pip install -e .
+```
+
+As shown below, this completes the environment setup necessary for running the software.
+
+![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/2.png)
+
+
+
+
 ```
 @article{he2025annotation,
   title={Annotation-free method for breast tumour segmentation in dynamic contrast-enhanced MRI},
