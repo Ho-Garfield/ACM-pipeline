@@ -11,9 +11,6 @@ Our **method** has the following three advantages:
 ![Description of GIF](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/multi.gif)
 
 
-# ACM-pipeline
-The full code will be uploaded after the article is accepted.
-
 
 
 
