@@ -67,22 +67,33 @@ Place the `.nii.gz` files into the `origin_images` folder under the `data` direc
 ACM-pipeline/
 ├── code/
 ├── data/
-│   └── images/
+│   └── origin_images/
 │       ├── case001_0000.nii.gz
 │       ├── case002_0000.nii.gz
 │       └── case003_0000.nii.gz
 
 ```
 
+
 Then, navigate to the `code` directory, activate the environment, and run the following command to launch the software GUI:
 
 ```bash
 python window.py
 ```
+## 4. Run GUI
 
 As shown below, this will bring up the visualization interface of the software.
 ![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/3.png)
+Then click the **`standardized.py`** button to enter the parameter setting window for this script, as shown below.
 
+- **`input dir`**: Path to the `.nii.gz` files (default is the `origin_images` directory).
+- **`output dir`**: Output path (default is the `images` directory).
+- **`in sub`** and **`out sub`**: Suffixes for input and output files, respectively.
+- **`is label`**: Indicates whether the input is a label file. The default is `False`, meaning B-spline interpolation will be used.
+- **`num process`**: Number of threads to use; by default, 8 threads will run in parallel.
+![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/4.png)
+
+Click the **`Run`** button to execute the script. The preprocessed images will be saved in the `images` directory.
 
 ```
 @article{he2025annotation,
