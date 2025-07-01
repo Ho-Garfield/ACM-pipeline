@@ -91,6 +91,7 @@ Then click the **`standardized.py`** button to enter the parameter setting windo
 - **`in sub`** and **`out sub`**: Suffixes for input and output files, respectively.
 - **`is label`**: Indicates whether the input is a label file. The default is `False`, meaning B-spline interpolation will be used.
 - **`num process`**: Number of threads to use; by default, 8 threads will run in parallel.
+
 ![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/4.png)
 
 Click the **`Run`** button to execute the script. The preprocessed images will be saved in the `images` directory.
@@ -108,6 +109,7 @@ Click the **`create_slice_mask.py`** button to open the parameter setting window
 After configuring the parameters, click the **`Run`** button to start the script.
 
 Once the script finishes successfully, a confirmation window will appear (as shown below), and a new directory named `slice_mask` will be created, containing the generated thoracic slice masks for partial samples.
+
 ![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/5.png)
 ![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/6.png)
 ### 5.2 3D Thoracic Mask Generation for Partial Samples
@@ -133,7 +135,9 @@ Click the **`create_breast_roi.py`** button to open the parameter configuration 
 Click the **`Run`** button to start the script. Once completed successfully, a `breast` directory will be created containing the generated breast region masks for partial samples.
 
 The following figure shows sampled slices from 10% to 90% of a representative case:
+
 ![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/7.png)
+
 ### 5.4 Breast Region Segmentation Model Training
 
 Rename the `breast` directory to `labels`.
@@ -146,8 +150,10 @@ Click the **`train.py`** button to open the parameter configuration window, as s
 After configuring the parameters, click the **`Run`** button to start training.
 
 Upon successful completion, the breast region segmentation model will be saved in the `model` directory, as shown below.
+
 ![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/8.png)
 ![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/9.png)
+
 ### 5.5 Breast Region Mask Prediction
 
 Click the **`predict.py`** button to open the parameter configuration window, as shown below.
@@ -161,7 +167,9 @@ Set the following parameters:
 Click the **`Run`** button to execute the script.
 
 Upon successful execution, the predicted breast region masks for all samples will be saved in the `preds` directory (under the specified output path by default).
+
 ![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/10.png)
+
 ## 6. Breast Multi-class Segmentation Mask Generation
 
 ### 6.1 Multi-class Mask Generation for Partial Samples
@@ -179,8 +187,10 @@ Click the **`Run`** button to execute the script.
 Upon successful execution, the multi-class breast segmentation masks for partial samples will be saved in the `multi` directory (the default output path), as illustrated below.
 
 The generated masks include multiple anatomical categories such as **fat**, **gland**, **epidermis**, **nipple**, and **tumor**.
+
 ![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/11.png)
 ![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/12.png)
+
 ### 6.2 Multi-class Breast Segmentation Model Training
 
 Rename the `multi` directory to `labels`.
@@ -209,6 +219,7 @@ Configure the following parameters:
 Click the **`Run`** button to start the prediction process.
 
 Once the script completes successfully, the multi-class segmentation masks for all samples will be generated in the `preds` directory (the default output path). The output examples of the multi-class segmentation masks are shown below.
+
 ![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/13.png)
 
 
