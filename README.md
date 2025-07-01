@@ -110,6 +110,30 @@ After configuring the parameters, click the **`Run`** button to start the script
 Once the script finishes successfully, a confirmation window will appear (as shown below), and a new directory named `slice_mask` will be created, containing the generated thoracic slice masks for partial samples.
 ![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/5.png)
 ![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/6.png)
+### 5.2 3D Thoracic Mask Generation for Partial Samples
+
+Click the **`slice2one.py`** button to open the parameter setting window. Configure the required parameters:
+
+- The input directory is set by default to `slice_mask` (generated in Step 5.1).
+- The output directory defaults to `slice2one`.
+- All other parameters are the same as in the previous step.
+
+Click the **`Run`** button to execute the script. Upon successful completion, a new folder named `slice2one` will be created, containing the 3D thoracic masks for partial samples.
+
+---
+
+### 5.3 Breast Region Mask Generation for Partial Samples
+
+Click the **`create_breast_roi.py`** button to open the parameter configuration window. Set the following parameters:
+
+- The input directory defaults to the `slice2one` folder (generated in Step 5.2).
+- The output directory defaults to `breast`.
+- All other parameters are the same as those shown in the interface from Figure 6.
+
+Click the **`Run`** button to start the script. Once completed successfully, a `breast` directory will be created containing the generated breast region masks for partial samples.
+
+The following figure shows sampled slices from 10% to 90% of a representative case:
+![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/7.png)
 
 ```
 @article{he2025annotation,
