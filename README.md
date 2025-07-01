@@ -181,6 +181,35 @@ Upon successful execution, the multi-class breast segmentation masks for partial
 The generated masks include multiple anatomical categories such as **fat**, **gland**, **epidermis**, **nipple**, and **tumor**.
 ![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/11.png)
 ![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/12.png)
+### 6.2 Multi-class Breast Segmentation Model Training
+
+Rename the `multi` directory to `labels`.
+
+Click the **`train.py`** button to open the training parameter window.
+
+In the configuration, set the following parameters:
+
+- **`is_breast`**: Set this to `False` to indicate that a multi-class breast segmentation model is being trained.
+- **`model`**: Set the output directory to `model2`.
+
+Click the **`Run`** button to start the training process.
+
+Upon successful completion, the trained multi-class breast segmentation model will be saved in the `model2` directory.
+## 7. Multi-class Breast Segmentation
+
+Click the **`predict.py`** button to open the prediction parameter window.
+
+Configure the following parameters:
+
+- **`model`**: Set this to the directory containing the trained multi-class breast segmentation model (e.g., `model2`).
+- **`test image folder`**: The input folder containing the test images.
+- **`predict folder`**: The output folder where the prediction results will be saved.
+- **`is_breast`**: Set this to `False` to indicate the use of the multi-class segmentation model.
+
+Click the **`Run`** button to start the prediction process.
+
+Once the script completes successfully, the multi-class segmentation masks for all samples will be generated in the `preds` directory (the default output path). The output examples of the multi-class segmentation masks are shown below.
+![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/13.png)
 
 
 ```
