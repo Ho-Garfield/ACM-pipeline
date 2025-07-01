@@ -147,6 +147,21 @@ After configuring the parameters, click the **`Run`** button to start training.
 
 Upon successful completion, the breast region segmentation model will be saved in the `model` directory, as shown below.
 ![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/8.png)
+![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/9.png)
+### 5.5 Breast Region Mask Prediction
+
+Click the **`predict.py`** button to open the parameter configuration window, as shown below.
+
+Set the following parameters:
+
+- **`model`**: Path to the trained model.
+- **`test image folder`**: The input folder containing the test images.
+- **`predict folder`**: The output folder where the predictions will be saved.
+
+Click the **`Run`** button to execute the script.
+
+Upon successful execution, the predicted breast region masks for all samples will be saved in the `preds` directory (under the specified output path by default).
+![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/10.png)
 
 
 ```
