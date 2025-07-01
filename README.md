@@ -162,6 +162,25 @@ Click the **`Run`** button to execute the script.
 
 Upon successful execution, the predicted breast region masks for all samples will be saved in the `preds` directory (under the specified output path by default).
 ![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/10.png)
+## 6. Breast Multi-class Segmentation Mask Generation
+
+### 6.1 Multi-class Mask Generation for Partial Samples
+
+Rename the `preds` directory from the previous step to `half_labels`.
+
+Click the **`multi_seg.py`** button to open the parameter configuration window, as shown below.
+
+Set the following parameter:
+
+- **`breast mask folder`**: The input directory containing the breast masks (i.e., the renamed `half_labels` folder from the previous step).
+
+Click the **`Run`** button to execute the script.
+
+Upon successful execution, the multi-class breast segmentation masks for partial samples will be saved in the `multi` directory (the default output path), as illustrated below.
+
+The generated masks include multiple anatomical categories such as **fat**, **gland**, **epidermis**, **nipple**, and **tumor**.
+![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/11.png)
+![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/12.png)
 
 
 ```
