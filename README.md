@@ -109,6 +109,7 @@ After configuring the parameters, click the **`Run`** button to start the script
 
 Once the script finishes successfully, a confirmation window will appear (as shown below), and a new directory named `slice_mask` will be created, containing the generated thoracic slice masks for partial samples.
 ![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/5.png)
+![Figure : Environment Setup](https://github.com/Ho-Garfield/ACM-pipeline/blob/main/6.png)
 
 ```
 @article{he2025annotation,
